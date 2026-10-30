@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nepali_python_utils"
+version = "0.1.0"
+description = "Decoupled linguistic utilities for Devanagari text sanitization, font conversion, and morphological processing."
+authors = [{ name = "ILPRL Research Team" }]
+requires-python = ">=3.9"
+dependencies = [
+    "regex>=2024.0.0"
+]
