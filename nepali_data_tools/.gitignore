@@ -1,0 +1,21 @@
+# Python virtual environment
+.venv/
+env/
+venv/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Downloaded subtitle/audio/video files
+*.vtt
+*.srt
+*.mp4
+*.m4a
+*.webm
+*.txt
+# Downloaded data directories and archives
+reddit_nepal_data/
+reddit_nepal_data.zip

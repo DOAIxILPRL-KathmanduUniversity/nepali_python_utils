@@ -1,0 +1,1 @@
+- synonym.csv file is created with very unsupervised way with multiple files merged from variious iteration. It was worked against pragyapratistahn dictionary and is just reference gazeteer for synthetic data generation and adversarial evaluation. 
