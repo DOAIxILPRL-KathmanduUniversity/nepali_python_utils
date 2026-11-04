@@ -3,11 +3,37 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nepali_python_utils"
+name = "nepali-utils"
 version = "0.1.0"
-description = "Decoupled linguistic utilities for Devanagari text sanitization, font conversion, and morphological processing."
+description = "Verified Nepali text normalization, transliteration, and lexical utilities for corpus and data pipelines."
+readme = "README.md"
 authors = [{ name = "ILPRL Research Team" }]
+license = { text = "CC0-1.0" }
 requires-python = ">=3.9"
 dependencies = [
-    "regex>=2024.0.0"
+    "regex>=2024.0.0",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+models = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+]
+data = [
+    "datasets>=2.12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/paramananda/nepali-utils"
+"Bug Tracker" = "https://github.com/paramananda/nepali-utils/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nepali_utils*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
